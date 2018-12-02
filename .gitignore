@@ -6,3 +6,4 @@ website
 *.log
 *.env
 *.DS_Store
+.idea
