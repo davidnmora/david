@@ -49,18 +49,15 @@
 }
 .item {
   position: absolute;
-  /*width: 100px;*/
-  /*height: 100px;*/
-  line-height: 100px;
   margin: 0px;
   z-index: 1;
 }
 
-.item.half-block {
-  width: 50%;
-  height: auto;
-  min-width: 100px;
-}
+/*.item.half-block {*/
+  /*width: 50%;*/
+  /*height: auto;*/
+  /*min-width: 100px;*/
+/*}*/
 
 
 .item.muuri-item-positioning {
@@ -82,6 +79,17 @@
   height: 100%;
   overflow: hidden;
 }
+
+.card img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /*width: auto;*/
+  float:left;width:50%;height:100%;object-fit:cover;
+  /*max-height: 100%;*/
+  /*max-width: 100%;*/
+}
+
 .card {
   position: absolute;
   left: 0;
@@ -144,15 +152,6 @@
   text-align: left;
   font-size: 16px;
   font-weight: 400;
-}
-
-.card img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: auto;
-  /*max-height: 100%;*/
-  /*max-width: 100%;*/
 }
 
 /* Grid Footer */
