@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>David Mora</title>
-    <meta name="description" content="Muuri is a JavaScript library that creates responsive, sortable, filterable and draggable grid layouts.">
+    <meta name="description" content="David Mora's personal website">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Niklas Rämö">
+    <meta name="author" content="David Mora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic">
     <link rel="stylesheet" href="styles/main.css?v=5">
     <link rel="stylesheet" href="styles/demo-grid.css?v=5">
-    <link rel="stylesheet" href="styles/demo-kanban.css?v=5">
     <link rel="icon" href="resources/images/favicon.png">
   </head>
   <body>
@@ -25,11 +24,9 @@
         <span><span>I'm a Stanford-grown programmer with a love for data vis.</span></span>
       </h2>
       <nav>
-        <a href="https://github.com/haltu/davidnmora">GitHub<i></i></a>
-        <a href="https://www.linkedin.com/in/david-mora-3a3541122/">LinkedIn<i></i></a>
-        <a href="https://www.pinterest.com/thedavidmora/graphic-design/">Pinterest<i></i></a>
-
-
+        <a href="https://github.com/davidnmora" target="_blank">GitHub<i></i></a>
+        <a href="https://drive.google.com/uc?authuser=0&id=11v57vUEQOhW4SPeksmJ4e4wPmvs5W8-U" target="_blank">Resume<i></i></a>
+        <a href="https://www.linkedin.com/in/david-mora-3a3541122/" target="_blank">LinkedIn<i></i></a>
       </nav>
     </header>
 
@@ -58,43 +55,31 @@
             <option value="green">Green</option>
           </select>
         </div>
-        <div class="control sort">
-          <div class="control-icon">
-            <i class="material-icons">&#xE164;</i>
-          </div>
-          <div class="select-arrow">
-            <i class="material-icons">&#xE313;</i>
-          </div>
-          <select class="control-field sort-field form-control">
-            <option value="order" selected>Drag</option>
-            <option value="title">Title (drag disabled)</option>
-            <option value="color">Color (drag disabled)</option>
-          </select>
-        </div>
-        <div class="control layout">
-          <div class="control-icon">
-            <i class="material-icons">&#xE871;</i>
-          </div>
-          <div class="select-arrow">
-            <i class="material-icons">&#xE313;</i>
-          </div>
-          <select class="control-field layout-field form-control">
-            <option value="left-top" selected>Left Top</option>
-            <option value="left-top-fillgaps">Left Top (fill gaps)</option>
-            <option value="right-top">Right Top</option>
-            <option value="right-top-fillgaps">Right Top (fill gaps)</option>
-            <option value="left-bottom">Left Bottom</option>
-            <option value="left-bottom-fillgaps">Left Bottom (fill gaps)</option>
-            <option value="right-bottom">Right Bottom</option>
-            <option value="right-bottom-fillgaps">Right Bottom (fill gaps)</option>
-          </select>
-        </div>
+
       </div>
 
-      <div class="grid"></div>
+      <div class="grid">
 
-      <div class="grid-footer">
-        <button class="add-more-items btn btn-primary"><i class="material-icons">&#xE145;</i>Add more items</button>
+        <div class="item half-block h1 w1 red" data-id="1" data-color="red" data-title="Card 1">
+          <div class="item-content">
+            <img src="resources/images/headshot.jpg" width="100px"/>
+            <div class="card">
+              <div class="card-id">1</div>
+              <div class="card-title">Card 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item half-block h1 w1 blue" data-id="2" data-color="blue" data-title="Card 1">
+          <div class="item-content">
+            <img src="resources/images/headshot.jpg" width="100px"/>
+            <div class="card">
+              <div class="card-id">2</div>
+              <div class="card-title">Card 2</div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </section>
@@ -102,7 +87,7 @@
     <section class="about">
 
       <h2 class="section-title"><span>About</span></h2>
-      <p>I'm currently in the Boston are and would love to meet you or collaborate</p>
+      <p>Find me between Boston and SF, freestyle rapping, jazz piano-ing, and just trying to listen deeply to the beautiful people around me.</p>
       <p>Reach me at davidmora 'at' cs.stanford.edu</p>
 
     </section>
@@ -111,7 +96,6 @@
     <script src="scripts/vendor/hammer-2.0.8.min.js"></script>
     <script src="scripts/vendor/muuri-0.7.0.js"></script>
     <script src="scripts/demo-grid.js?v=5"></script>
-    <script src="scripts/demo-kanban.js?v=5"></script>
 
   </body>
 
