@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
     filterFieldValue = filterField.value;
     grid.filter(function (item) {
       var element = item.getElement();
-			console.log(item, element);
-      var isSearchMatch = !searchFieldValue ? true : (element.getAttribute('data-title') || '').toLowerCase().indexOf(searchFieldValue) > -1;
+			var searchText = element.querySelector('.card-title').innerText + element.querySelector('.card-info > p').innerText
+      var isSearchMatch = !searchFieldValue ? true : (searchText || '').toLowerCase().indexOf(searchFieldValue) > -1;
       var isFilterMatch = !filterFieldValue ? true : (element.getAttribute('data-color') || '') === filterFieldValue;
       return isSearchMatch && isFilterMatch;
     });
