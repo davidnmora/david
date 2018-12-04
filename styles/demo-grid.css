@@ -109,7 +109,10 @@
 
 .card > .card-title {
   position: absolute;
-  margin: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+  margin-right: 30px;
   opacity: 0;
   z-index: 999;
   font-weight: 300;
