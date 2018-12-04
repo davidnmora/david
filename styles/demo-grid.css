@@ -84,10 +84,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  /*width: auto;*/
   float:left;width:50%;height:100%;object-fit:cover;
-  /*max-height: 100%;*/
-  /*max-width: 100%;*/
+
 }
 
 .card {
@@ -99,38 +97,28 @@
 
   background-color: rgba(255,255,255,0.0);
   border: 2px solid;
-
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
 .card:hover {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.8);
 }
 
 .card > .card-title {
   position: absolute;
-  left: 50%;
-  right: 50%;
-
+  margin: 30px;
   opacity: 0;
   z-index: 999;
-  text-align: left;
-  font-size: 24px;
   font-weight: 300;
   color: #333;
-  /*background: burlywood;*/
-  cursor: pointer;
-
 }
 
 .card:hover > .card-title {
   opacity: 100;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 

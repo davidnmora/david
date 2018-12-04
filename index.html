@@ -1,102 +1,99 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>David Mora</title>
-    <meta name="description" content="David Mora's personal website">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="David Mora">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic">
-    <link rel="stylesheet" href="styles/main.css?v=5">
-    <link rel="stylesheet" href="styles/demo-grid.css?v=5">
-    <link rel="icon" href="resources/images/favicon.png">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>David Mora</title>
+  <meta name="description" content="David Mora's personal website">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="author" content="David Mora">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic">
+  <link rel="stylesheet" href="styles/main.css?v=5">
+  <link rel="stylesheet" href="styles/demo-grid.css?v=5">
+  <link rel="icon" href="resources/images/favicon.png">
+</head>
+<body>
 
-    <header>
-      <div class="logo">
-        <img src="resources/images/headshot.jpg" />
+<header>
+  <div class="logo">
+    <img src="resources/images/headshot.jpg" />
+  </div>
+  <h1>David Mora</h1>
+  <h2>Hi, I'm David.
+    <span><span>I'm a Stanford-grown programmer with a love for data vis.</span></span>
+  </h2>
+  <nav>
+    <a href="https://github.com/davidnmora" target="_blank">GitHub<i></i></a>
+    <a href="https://drive.google.com/uc?authuser=0&id=11v57vUEQOhW4SPeksmJ4e4wPmvs5W8-U" target="_blank">Resume<i></i></a>
+    <a href="https://www.linkedin.com/in/david-mora-3a3541122/" target="_blank">LinkedIn<i></i></a>
+  </nav>
+</header>
+
+<section class="grid-demo">
+
+  <h2 class="section-title"><span>Work</span></h2>
+
+  <div class="controls cf">
+    <div class="control search">
+      <div class="control-icon">
+        <i class="material-icons">&#xE8B6;</i>
       </div>
-      <h1>David Mora</h1>
-      <h2>Hi, I'm David.
-        <span><span>I'm a Stanford-grown programmer with a love for data vis.</span></span>
-      </h2>
-      <nav>
-        <a href="https://github.com/davidnmora" target="_blank">GitHub<i></i></a>
-        <a href="https://drive.google.com/uc?authuser=0&id=11v57vUEQOhW4SPeksmJ4e4wPmvs5W8-U" target="_blank">Resume<i></i></a>
-        <a href="https://www.linkedin.com/in/david-mora-3a3541122/" target="_blank">LinkedIn<i></i></a>
-      </nav>
-    </header>
-
-    <section class="grid-demo">
-
-      <h2 class="section-title"><span>Work</span></h2>
-
-      <div class="controls cf">
-        <div class="control search">
-          <div class="control-icon">
-            <i class="material-icons">&#xE8B6;</i>
-          </div>
-          <input class="control-field search-field form-control " type="text" name="search" placeholder="Search..." />
-        </div>
-        <div class="control filter">
-          <div class="control-icon">
-            <i class="material-icons">&#xE152;</i>
-          </div>
-          <div class="select-arrow">
-            <i class="material-icons">&#xE313;</i>
-          </div>
-          <select class="control-field filter-field form-control">
-            <option value="" selected>All</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-          </select>
-        </div>
-
+      <input class="control-field search-field form-control " type="text" name="search" placeholder="Search..." />
+    </div>
+    <div class="control filter">
+      <div class="control-icon">
+        <i class="material-icons">&#xE152;</i>
       </div>
+      <div class="select-arrow">
+        <i class="material-icons">&#xE313;</i>
+      </div>
+      <select class="control-field filter-field form-control">
+        <option value="" selected>All</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
 
-      <div class="grid">
+  </div>
 
-        <div class="item h1 w1 red" data-id="1" data-color="red" data-title="Card 1">
-          <div class="item-content">
-            <img src="resources/images/headshot.jpg"/>
-            <div class="card">
-              <div class="card-id">1</div>
-              <div class="card-title">Card 1</div>
+  <div class="grid">
+
+    <div class="item h1 w1 red" data-id="1" data-color="red" data-title="Card 1">
+      <div class="item-content">
+        <a href="https://github.com/davidnmora/positive-psych-vis" target="_blank">
+          <img src="resources/images/citation-vis.png" width="400px"/>
+          <div class="card">
+            <div class="card-id">1</div>
+            <div class="card-title">
+              <h2 class="section-title"><span>Psychology Citation Network</span></h2>
+              <p>This project worked in D3, React, with Python Pandas for data analysis</p>
             </div>
           </div>
-        </div>
-
-        <div class="item h1 w1 blue" data-id="2" data-color="blue" data-title="Card 1">
-          <div class="item-content">
-            <img src="resources/images/headshot.jpg"/>
-            <div class="card">
-              <div class="card-id">2</div>
-              <div class="card-title">Card 2</div>
-            </div>
-          </div>
-        </div>
-
+        </a>
       </div>
+    </div>
 
-    </section>
 
-    <section class="about">
 
-      <h2 class="section-title"><span>About</span></h2>
-      <p>Find me between Boston and SF, freestyle rapping, jazz piano-ing, and just trying to listen deeply to the beautiful people around me.</p>
-      <p>Reach me at davidmora 'at' cs.stanford.edu</p>
+  </div>
 
-    </section>
+</section>
 
-    <script src="scripts/vendor/web-animations-2.3.1.min.js"></script>
-    <script src="scripts/vendor/hammer-2.0.8.min.js"></script>
-    <script src="scripts/vendor/muuri-0.7.0.js"></script>
-    <script src="scripts/demo-grid.js?v=5"></script>
+<section class="about">
 
-  </body>
+  <h2 class="section-title"><span>About</span></h2>
+  <p>Find me between Boston and SF, freestyle rapping, jazz piano-ing, and just trying to listen deeply to the beautiful people around me.</p>
+  <p>Reach me at davidmora 'at' cs.stanford.edu</p>
+
+</section>
+
+<script src="scripts/vendor/web-animations-2.3.1.min.js"></script>
+<script src="scripts/vendor/hammer-2.0.8.min.js"></script>
+<script src="scripts/vendor/muuri-0.7.0.js"></script>
+<script src="scripts/demo-grid.js?v=5"></script>
+
+</body>
 
 </html>
