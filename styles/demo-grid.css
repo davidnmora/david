@@ -37,6 +37,33 @@
   z-index: 1;
 }
 
+/* Card titles */
+
+.card-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+
+  color: #3e3e3e;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 40px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  right: 10px;
+  height: 2px;
+  background: #3e3e3e;
+}
+
 /* Grid */
 
 .grid {
@@ -107,7 +134,7 @@
   background-color: rgba(255,255,255,0.8);
 }
 
-.card > .card-title {
+.card > .card-info {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -119,7 +146,7 @@
   color: #333;
 }
 
-.card:hover > .card-title {
+.card:hover > .card-info {
   opacity: 100;
   transition: all 0.3s ease-out;
 }

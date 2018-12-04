@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     filterFieldValue = filterField.value;
     grid.filter(function (item) {
       var element = item.getElement();
+			console.log(item, element);
       var isSearchMatch = !searchFieldValue ? true : (element.getAttribute('data-title') || '').toLowerCase().indexOf(searchFieldValue) > -1;
       var isFilterMatch = !filterFieldValue ? true : (element.getAttribute('data-color') || '') === filterFieldValue;
       return isSearchMatch && isFilterMatch;
@@ -82,29 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
   //
   // Generic helper functions
   //
-
-  function getRandomItem(collection) {
-
-    return collection[Math.floor(Math.random() * collection.length)];
-
-  }
-
-  // https://stackoverflow.com/a/7228322
-  function getRandomInt(min,max) {
-
-    return Math.floor(Math.random() * (max - min + 1) + min);
-
-  }
-
-  function generateRandomWord(length) {
-
-    var ret = '';
-    for (var i = 0; i < length; i++) {
-      ret += getRandomItem(characters);
-    }
-    return ret;
-
-  }
 
   function compareItemTitle(a, b) {
 
@@ -135,22 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var p = Element.prototype;
     return (p.matches || p.matchesSelector || p.webkitMatchesSelector || p.mozMatchesSelector || p.msMatchesSelector || p.oMatchesSelector).call(element, selector);
-
-  }
-
-  function elementClosest(element, selector) {
-
-    if (window.Element && !Element.prototype.closest) {
-      var isMatch = elementMatches(element, selector);
-      while (!isMatch && element && element !== document) {
-        element = element.parentNode;
-        isMatch = element && element !== document && elementMatches(element, selector);
-      }
-      return element && element !== document ? element : null;
-    }
-    else {
-      return element.closest(selector);
-    }
 
   }
 
