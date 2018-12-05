@@ -120,6 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Fire it up!
   //
 
-  initDemo();
+  // initDemo();
 
 });
