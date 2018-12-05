@@ -40,14 +40,18 @@ a:hover {
 
 /* Clearfix */
 
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
+.cf {
+  display: none;
 }
-.cf:after {
-  clear: both;
-}
+
+/*.cf:before,*/
+/*.cf:after {*/
+  /*content: " ";*/
+  /*display: table;*/
+/*}*/
+/*.cf:after {*/
+  /*clear: both;*/
+/*}*/
 
 /* Material icons */
 
@@ -150,7 +154,8 @@ select.form-control::-ms-expand {
 /* Header */
 
 header {
-  margin: 30px auto;
+  margin-top: 136px;
+  margin-bottom: 136px;
   max-width: 940px;
 }
 header .logo {
@@ -190,6 +195,8 @@ header aside {
   font-style: italic;
   text-align: center;
 }
+
+/*Original nav*/
 header nav {
   text-align: center;
 }
@@ -236,6 +243,8 @@ header nav a:hover i {
   -o-transition: -o-transform 0.2s ease-out, opacity 0s ease 0s;
   transition: transform 0.2s ease-out, opacity 0s ease 0s;
 }
+
+/*  When the screen SMALLER than 600px */
 @media (max-width: 600px) {
   header {
     margin-bottom: 0;
@@ -302,7 +311,7 @@ section {
   margin: 60px auto;
   padding-top: 0;
   max-width: 940px;
-  border-top: 2px solid #e5e5e5;
+  /*border-top: 2px solid #e5e5e5;*/
   text-align: left;
 }
 section.demo {
