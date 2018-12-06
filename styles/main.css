@@ -246,6 +246,7 @@ header nav a:hover i {
 
 /* Opening text */
 #opening {
+  margin-top: 78px;
   margin-bottom: 100px;
 }
 
@@ -253,7 +254,7 @@ header nav a:hover i {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin: 0;
+  margin-bottom: 12px;
 
   color: #3e3e3e;
   font-size: 160px;
@@ -276,7 +277,7 @@ header nav a:hover i {
 /*}*/
 
 /*  When the screen SMALLER than 600px */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   header {
     margin-bottom: 0;
   }
@@ -310,7 +311,11 @@ header nav a:hover i {
   }
 
   .big-text {
-    font-size: 42px;
+    font-size: 48px;
+  }
+
+  .item {
+    width: 100%;
   }
 }
 
@@ -355,7 +360,7 @@ section h4 {
   font-size: 20px;
   color: #3e3e3e;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   section.demo {
     border-top: 0;
   }
@@ -416,7 +421,7 @@ section h4 {
   font-weight: 500;
   font-size: 20px;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .feature-list-item {
     padding-left: 0;
   }
