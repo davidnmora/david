@@ -14,18 +14,6 @@
   text-align: center;
 }
 
-/*Fancy underline*/
-/*.card-title:after {*/
-  /*content: "";*/
-  /*display: block;*/
-  /*position: absolute;*/
-  /*left: 10px;*/
-  /*bottom: 0;*/
-  /*right: 10px;*/
-  /*height: 2px;*/
-  /*background: #3e3e3e;*/
-/*}*/
-
 .card-info > p {
   margin-bottom: 0;
 }
@@ -159,5 +147,9 @@
 
   #opening {
     margin-top: 36px;
+  }
+
+  .card-title {
+    font-size: 18px;
   }
 }

@@ -265,17 +265,6 @@ header nav a:hover i {
   /*text-align: center;*/
 }
 
-/*#opening:after {*/
-  /*content: "";*/
-  /*display: block;*/
-  /*position: absolute;*/
-  /*left: 10px;*/
-  /*bottom: 0;*/
-  /*right: 10px;*/
-  /*height: 2px;*/
-  /*background: #3e3e3e;*/
-/*}*/
-
 /*  When the screen SMALLER than 600px */
 @media (max-width: 700px) {
   header {
@@ -316,6 +305,10 @@ header nav a:hover i {
 
   .item {
     width: 100%;
+  }
+
+  .card-info p {
+    font-size: 14px;
   }
 }
 
