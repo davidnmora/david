@@ -35,7 +35,6 @@
   margin-right: auto;
 }
 
-
 .item.muuri-item-positioning {
   z-index: 2;
 }
@@ -60,8 +59,10 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  float:left;width:50%;height:100%;object-fit:cover;
-
+  float: left;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card {
@@ -71,14 +72,18 @@
   right: 0;
   bottom: 0;
 
-  background-color: rgba(255,255,255,0.0);
+  background-color: rgba(255, 255, 255, 0);
 
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 
+.card.no-link {
+  cursor: default;
+}
+
 .card:hover {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .card > .card-info {
@@ -118,7 +123,6 @@
   margin-right: 10px;
   font-size: 24px;
 }
-
 
 /* Controls */
 
