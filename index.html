@@ -51,20 +51,16 @@
         <div id="opening" class="item">
           <div class="big-text">Hi, I'm David.</div>
           <p>
-            I am a <b>data storyteller</b> &
+            I'm a <b>visual storyteller</b> &
             <b>data visualization software engineer</b>.
           </p>
-
-          <p>But what the job I <i>really</i> want doesn't exist yet.</p>
-
-          <p>Let me explain...</p>
 
           <p>
             My passion for data visualization has led me to
             <a
               href="https://ruralinnovation.us/our-work/research_mapping/"
               target="_blank"
-              >create & present economic data for US Government officials</a
+              >visualizing & presenting economic data for US Government officials</a
             >, uncover
             <a
               href="https://www.youtube.com/watch?v=dIKsEhX-vyU"
@@ -77,65 +73,88 @@
               target="_blank"
               >a cutting-edge data analytics platform</a
             >
-            from inception to acquisition.
+            from inception to the startup's eventual acquisition.
           </p>
 
-          <p>
-            But after the better part of a decade at the bleeding edge of data
-            analytics, I'm convinced
-            <b>my field is yet to realize its potential for positive impact</b>.
-          </p>
+          <script>
+            const toggleSection = () => {
+              const toggleSection = document.getElementById("toggle-section");
+              toggleSection.classList.toggle("collapsed");
+            }
+          </script>
+
+          <style>
+            #toggle-section {
+              margin-left: 24px;
+              display: block;
+            }
+            #toggle-section.collapsed {
+              display: none;
+            }
+            #toggle-button {
+              padding: 12px;
+              border-radius: 3px;
+              font-size: 12px;
+            }
+          </style>
+
+          <button id="toggle-button" onClick="toggleSection()">But wait, don't you have some idealistic vision that will take like 12 paragraphs to explain?</button>
+          <div id="toggle-section" class="collapsed">
+            <p>Oh, right! I do...</p>
+            <p>
+              After the better part of a decade at the bleeding edge of data
+              analytics, I'm convinced
+              <b>my field is yet to realize its potential for positive impact</b>.
+            </p>
+
+            <p>
+              We in Silicon Valley claimed that the age of "Big Data" would
+              deliver deep insights for making the world a better place. In
+              practice, it has largely focused us on
+              <b
+                >symptoms, short-term control, & reinforcing our existing
+                beliefs</b
+              >. At worst, it's been a tool for widening systemic inequity.
+            </p>
+
+            <p>
+              But this shouldn't surprise us:
+              <b>the media we use & the mindsets we apply to data</b> focus us on
+              symptoms, not underlying causes. Our tools let us watch trend lines
+              go up & down. Our paradigms tell us to try to control the lines.
+            </p>
+
+            <p>
+              In response, I'm on a mission to create
+              <b
+                >new digital media that bring into focus the complex systems at
+                the heart of humanity's biggest challenges</b
+              >
+              -- rather than the symptoms they create. I want to help shift the
+              paradigm of how we use data from trying to control outcomes to
+              <b>creating the conditions for flourishing</b>.
+            </p>
+
+            <p>
+              I'm still early on this journey, but if the vision interests you,
+              <a
+                href="https://medium.com/show-me-the-system/news-is-not-enough-humanity-needs-system-illuminating-story-forms-de03ae031218"
+                target="_blank"
+                >checkout this manifesto on the need for systems-oriented media</a
+              >, or
+              <a
+                href="https://www.youtube.com/watch?v=8PkGb7myfEs"
+                target="_blank"
+                >this short talk</a
+              >
+              I gave at EYEO Festival on moving from "dataviz" to "systemviz".
+            </p>
+          </div>
+          
 
           <p>
-            We in Silicon Valley claimed that the age of "Big Data" would
-            deliver deep insights for making the world a better place. In
-            practice, it has largely focused us on
-            <b
-              >symptoms, short-term control, & reinforcing our existing
-              beliefs</b
-            >. At worst, it's been a tool for widening systemic inequity.
+            <i>Check out some of my work below!</i>
           </p>
-
-          <p>
-            But this shouldn't surprise us:
-            <b>the media we use & the mindsets we apply to data</b> focus us on
-            symptoms, not underlying causes. Our tools let us watch trend lines
-            go up & down. Our paradigms tell us to try to control the lines.
-          </p>
-
-          <p>
-            In response, I'm on a mission to create
-            <b
-              >new digital media that bring into focus the complex systems at
-              the heart of humanity's biggest challenges</b
-            >
-            -- rather than the symptoms they create. I want to help shift the
-            paradigm of how we use data from trying to control outcomes to
-            <b>creating the conditions for flourishing</b>.
-          </p>
-
-          <p>
-            I'm very early on this journey, but if the vision interests you,
-            <a
-              href="https://medium.com/show-me-the-system/news-is-not-enough-humanity-needs-system-illuminating-story-forms-de03ae031218"
-              target="_blank"
-              >checkout this manifesto on the need for systems-oriented media</a
-            >, or
-            <a
-              href="https://www.youtube.com/watch?v=8PkGb7myfEs"
-              target="_blank"
-              >this short talk</a
-            >
-            I gave at EYEO Festival on moving from "dataviz" to "systemviz".
-          </p>
-
-          <p>
-            <i
-              >Or, for less future-looking stuff, just check out some of my past
-              work below!</i
-            >
-          </p>
-        </div>
 
         <!--Project Cards-->
         <div
@@ -425,13 +444,13 @@
                 <div class="card-info">
                   <h2 class="card-title">School To Prison Pipeline Research</h2>
                   <p>
-                    I'm collaborating with an NGO and diving deep into academic
+                    I'm collaborated with an NGO and diving deep into academic
                     papers, books, interviews, and data to create an interactive
                     piece exploring
                     <b
                       >inequity and delinquency across the USA's 96,000 public
-                      schools.</b
-                    >
+                      schools.
+                    </b>
                     Click to see my most recent data analysis.
                   </p>
                 </div>
